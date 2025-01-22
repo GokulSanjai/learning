@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div id="container">
+        <nav>
+        <img src="" class="logo">
+    <ul id="sidemenu">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Service">Service</a></li>
+        <li><a href="#Portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-x" onclick="closemenu()"></i>
+     </ul>
+     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>Frontend developer</p>
+        <h1>Hi I'm<span>Gokul Sanjai</span><br>From Salem</h1>
+        </div>
+        </div>
+        </div>
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Hello! I'm Gokul Sanjai, a B.Tech-Information technology graduate at KSR Institute For Engineering and Technology in tiruchengode,Namakkal,Tamilnadu.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span> Frontend Development</span><br>With HTML, CSS, and JavaScript as my tools, I'm ready to create captivating user experiences. 
+                                    Fueled by design passion, I'm eager to craft engaging websites that charm users and make every interaction memorable.</li>
+
+                                    <li><span>Python</span>As a python developer,I bring a strong foundation in programming logic and problem-solving, 
+                                        coupled with a passion for learning and contributing to dynamic development projects using Java technologies. 
+                                        Eager to collaborate, adapt, and grow while delivering efficient and innovative solutions in the world of software development.</li>
+                            </ul>
+                            <div class="tab-contents" id="experience">
+                                <ul>
+                                    <li><span>2020-2024</span><br>Network Essential and Cybersecurity at CISCO ACADEMY.</li>
+                                    <li><span>2020-2024</span><br>Inplant training for the webdesigning course at coimbatore.</li>
+                                    <li><span>2020-2024</span><br>skilledge and Learnathon Online courses.</li>
+                                </ul>
+                            </div>
+                            <div class="tab-contents" id="education">
+                                <ul>
+                                    <li><span>2020-2024</span><br>B.TECH-IT From KSR Institute For Engineering And Technology.</li>
+                                    <li><span>2018-2020</span><br>HSC From Srii Jothi Higher secondary school Tharamangalam.</li>
+                                    <li><span>2017-2018</span><br>SSLC From Srii Jothi Higher secondary school Tharamangalam.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Service" id="Service">
+                <div class="container">
+                    <h1 class="sub-title">My Service</h1>
+                    <div class="Service-list">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <h2>web Design</h2>
+                            <p id="p1">proficient in frontend and back-end technologies,with a passion for creating user friendly and interactive web applications.</p>
+                            <a href="">Learn more</a>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-crop"></i>
+                            <h2>Frontend Development</h2>
+                            <P id="p1"> Proficient in building responsive user interfaces,
+                                modern front-end technologies and developing scalable 
+                                server-side applications with robust database management for seamless
+                                web experiences.</P>
+                            <a href="">Learn more</a>
+                        </div>
+                        <div>
+                            <i class="fa-brands fa-app-store"></i>
+                            <h2>Database Management</h2>
+                            <p id="p1">Proficient in database management, Skilled in SQL 
+                                querying and management,with a strong commitment to maintaining 
+                                data integrity and facilitating seamless data-driven decision-making.
+                            </p>
+                            <a href="">Leran more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Portfolio">
+                <div class="container">
+                    <h1 class="sub-title">My work</h1>
+                    <div class="work-list">
+                        <div class="work">
+                            <img src="project.1.png" alt="">
+                            <div class="layer">
+                                <h3 id="hd">Suicide prevention analysis.</h3>
+                                <p id="hd1">This project is used for accurate prediction and detection of suicidal risk using random forest algorithm</p>
+                                <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            </div>
+                        </div>
+                        <div class="work">
+                            <img src="project2.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>

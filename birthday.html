@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>Birthday Countdown</title>
+<style>
+ body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(183, 218, 32, 0.671);
+    color: rgb(27, 25, 25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.countdown{
+    justify-content: center;
+    gap: 10px;
+    background-color: #b6bec7;
+    padding: 20px 30px;
+    text-align: center;
+    border-radius: 6px;
+}
+</style>
+</head>
+<body>
+
+<h1>Days Until My Birthday!</h1>
+<div id="countdown"></div>
+<script>
+  const birthday = new Date(new Date().getFullYear(), 2, 2);
+  const intervalId = setInterval(() => {
+    const now = new Date();
+    const diff = birthday - now;
+
+    if (diff <= 0) {
+      clearInterval(intervalId);
+      document.getElementById("countdown").innerHTML = "Happy Birthday!";
+    } else {
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =  days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+    }
+  }, 1000);
+</script>
+</body>
+</html>
